@@ -1,11 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./site.css";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Index from "./routes";
+import About from "./routes/about";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        {/* Here is where you can add more routes */}
+        <Route path="/" element={<Index />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>,
-  document.getElementById('root')
-)
+  document.getElementById("root")
+);
