@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function About() {
   return (
     <>
@@ -5,6 +7,7 @@ export default function About() {
       <p id="textabout">
         lorem ipsum dolor sit amet consectetur adipisicing elit
       </p>
+      <Link to={"/"}>Go to home</Link>
     </>
   );
 }
