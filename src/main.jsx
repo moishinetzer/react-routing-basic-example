@@ -10,6 +10,7 @@ ReactDOM.render(
     <BrowserRouter>
       <Routes>
         {/* Here is where you can add more routes */}
+        {/* Don't forget to import them like above, follow the same pattern */}
         <Route path="/" element={<Index />} />
         <Route path="/about" element={<About />} />
       </Routes>
